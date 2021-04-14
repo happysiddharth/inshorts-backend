@@ -1,5 +1,6 @@
 package com.example.inShorts.configuration;
 
+import com.example.inShorts.dao.UserDAO;
 import com.example.inShorts.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -53,4 +54,5 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
     }
+
 }
