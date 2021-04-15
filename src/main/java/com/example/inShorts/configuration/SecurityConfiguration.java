@@ -37,7 +37,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .cors()
                 .disable()
                 .authorizeRequests()
-                .antMatchers("/token")
+                .antMatchers("/signup","/login","/api/news/*")
                 .permitAll()
                 .anyRequest().authenticated()
                 .and()

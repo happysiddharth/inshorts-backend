@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserDatabaseServiceImplementation implements UserDatabaseService{
 
-    final
+    @Autowired
     UserDAO userDAO;
 
     public UserDatabaseServiceImplementation(UserDAO userDAO) {
