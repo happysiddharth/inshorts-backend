@@ -32,7 +32,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             jwtToken = authorization.substring(7);
             try {
                 username = this.jwtUtility.extractUsername(jwtToken);
-
             }catch (Exception e){
                 e.printStackTrace();
                 try {
